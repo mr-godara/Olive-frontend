@@ -1,35 +1,86 @@
-# Olive-frontend
+# Olive Frontend
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+A modern, responsive landing page for **Olive**, a food scanner app that helps families instantly identify harmful ingredients and get expert-backed nutrition insights while shopping for groceries.
 
-## Built with v0
+## Overview
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+This project is a faithful recreation of the Olive marketing site, built with a clean component architecture and a warm, food-friendly visual identity. The page highlights the product's core value proposition with a hero section, social proof, dual call-to-action buttons, and an interactive phone mockup that previews the in-app scan experience.
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_0NiHZpB03uBz5yC1kRKk1SFY46dg)
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4 with design tokens
+- **UI Primitives:** Radix UI + shadcn/ui
+- **Icons:** Lucide React
+- **Fonts:** Instrument Serif (headings) and DM Sans (body), loaded via `next/font`
+
+## Features
+
+- Sticky top navigation with custom pear/leaf logo and primary CTA
+- Hero section with social-proof avatar stack and a "3k+" trust badge
+- Large editorial-style headline and supporting copy
+- Dual CTAs for iOS download and community sign-up
+- Detailed phone mockup showcasing a real product scan result, score, and "Oliver Says" expert commentary
+- Fully responsive layout, mobile-first
+- Accessible markup with semantic HTML and proper alt text
+
+## Project Structure
+
+```
+app/
+  layout.tsx          # Root layout, font setup, metadata
+  page.tsx            # Landing page composition
+  globals.css         # Design tokens and Tailwind theme
+components/
+  olive/
+    navbar.tsx        # Top navigation
+    olive-logo.tsx    # Brand mark
+    hero.tsx          # Hero section with trust badge and CTAs
+    phone-mockup.tsx  # In-app preview mockup
+public/
+  images/             # Avatars, product imagery, illustrations
+```
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and start the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Or with npm / yarn / bun:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install && npm run dev
+yarn && yarn dev
+bun install && bun dev
+```
 
-## Learn More
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-To learn more, take a look at the following resources:
+## Available Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+- `dev` — Start the local development server with HMR
+- `build` — Create a production build
+- `start` — Run the production build
+- `lint` — Run ESLint over the codebase
 
-<a href="https://v0.app/chat/api/kiro/clone/mr-godara/Olive-frontend" alt="Open in Kiro"><img src="https://pdgvvgmkdvyeydso.public.blob.vercel-storage.com/open%20in%20kiro.svg?sanitize=true" /></a>
+## Design System
+
+The visual language is driven by a small, focused palette defined as CSS custom properties in `app/globals.css`:
+
+- **Primary:** deep olive green (brand)
+- **Accent:** soft sage
+- **Background:** warm cream
+- **Foreground:** near-black for high contrast
+- **Muted:** subtle neutrals for secondary text and borders
+
+Typography pairs a refined serif for display headings with a clean geometric sans for body copy, keeping the interface friendly and editorial without feeling busy.
+
+
+## License
+
+This project is provided for demonstration and educational purposes.
