@@ -80,9 +80,6 @@ The visual language is driven by a small, focused palette defined as CSS custom 
 
 Typography pairs a refined serif for display headings with a clean geometric sans for body copy, keeping the interface friendly and editorial without feeling busy.
 
-## Deployment
-
-The project is optimized for deployment on [Vercel](https://vercel.com). Pushing to the main branch will trigger an automatic production deployment when the project is connected.
 
 ## License
 
