@@ -87,10 +87,22 @@ export function PhoneMockup() {
           {/* Oliver Says */}
           <div className="px-5 py-4">
             <div className="flex items-center gap-2">
-              <div className="flex h-6 w-6 items-center justify-center rounded-full bg-accent">
-                <span className="text-[10px]" aria-hidden="true">
-                  {"🫒"}
-                </span>
+              <div
+                className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/15"
+                aria-hidden="true"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  className="h-3.5 w-3.5 text-primary"
+                  fill="currentColor"
+                >
+                  <ellipse cx="12" cy="14" rx="6" ry="7.5" />
+                  <path
+                    d="M12 6.5c0-2 1-3.5 3-4.5-.2 2-1 3.5-3 4.5z"
+                    fill="currentColor"
+                    opacity="0.6"
+                  />
+                </svg>
               </div>
               <p className="text-xs font-semibold text-foreground">
                 Oliver Says:

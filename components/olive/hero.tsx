@@ -17,7 +17,10 @@ export function Hero() {
       <div className="mx-auto max-w-7xl px-6 pt-10 pb-20 md:pt-16">
         {/* Trust badge */}
         <div className="mx-auto flex w-fit items-center gap-3 rounded-full">
-          <div className="flex -space-x-2">
+          <div className="flex items-center -space-x-2">
+            <span className="relative z-10 inline-flex h-7 items-center justify-center rounded-full bg-primary px-2 text-[11px] font-semibold text-primary-foreground ring-2 ring-background">
+              3k+
+            </span>
             {avatars.map((a, i) => (
               <span
                 key={i}
